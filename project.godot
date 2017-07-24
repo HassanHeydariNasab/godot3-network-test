@@ -1,0 +1,19 @@
+config_version=3
+[application]
+
+run/main_scene="res://Elektejo.tscn"
+name="simpla_reto"
+icon="res://icon.png"
+
+[autoload]
+
+Ludstato="*res://Ludstato.gd"
+
+[input]
+
+iri=[ Object(InputEventKey,"resource_local_to_scene":false,"resource_name":"","device":0,"alt":false,"shift":false,"control":false,"meta":false,"command":false,"pressed":false,"scancode":32,"unicode":0,"echo":false,"script":null)
+ ]
+
+[rendering]
+
+viewport/default_environment="res://default_env.tres"

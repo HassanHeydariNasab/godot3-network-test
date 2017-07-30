@@ -11,10 +11,15 @@ radius = 40.0
 [node name="Ludanto" type="KinematicBody2D"]
 
 input_pickable = false
-collision_layer = 1
-collision_mask = 1
+collision_layer = 2
+collision_mask = 2050
 collision/safe_margin = 0.08
 script = ExtResource( 1 )
+_sections_unfolded = [ "Collision", "collision" ]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+
+shape = SubResource( 1 )
 
 [node name="Sprite" type="Sprite" parent="."]
 
@@ -36,8 +41,23 @@ percent_visible = 1.0
 lines_skipped = 0
 max_lines_visible = -1
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+[node name="Kuglujo" type="Position2D" parent="."]
 
-shape = SubResource( 1 )
+position = Vector2( 70, 0 )
+
+[node name="Vivo" type="Polygon2D" parent="."]
+
+polygon = PoolVector2Array( -50, -30, -50, 30, -60, 30, -60, -30 )
+uv = PoolVector2Array(  )
+color = Color( 1, 1, 1, 1 )
+vertex_colors = PoolColorArray(  )
+offset = Vector2( 0, 0 )
+texture = null
+texture_offset = Vector2( 0, 0 )
+texture_scale = Vector2( 1, 1 )
+texture_rotation = 0.0
+invert_enable = false
+invert_border = 100.0
+_sections_unfolded = [ "Transform" ]
 
 

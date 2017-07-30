@@ -73,6 +73,7 @@ _sections_unfolded = [ "Placeholder", "Rect" ]
 
 [node name="Testilo" type="Area2D" parent="."]
 
+editor/display_folded = true
 scale = Vector2( 5, 5 )
 input_pickable = false
 gravity_vec = Vector2( 0, 0 )
@@ -86,6 +87,10 @@ _sections_unfolded = [ "Pickable", "Transform" ]
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Testilo"]
 
 shape = SubResource( 1 )
+
+[node name="Ludantoj" type="Node2D" parent="."]
+
+[node name="Kugloj" type="Node2D" parent="."]
 
 [connection signal="pressed" from="Servilo" to="." method="_on_Servilo_pressed"]
 
